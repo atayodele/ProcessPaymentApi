@@ -1,0 +1,124 @@
+2021-03-04 10:30:08.017 +01:00 [DBG] Hosting starting
+2021-03-04 10:30:08.686 +01:00 [DBG] Loaded hosting startup assembly CheckoutApp
+2021-03-04 10:30:08.701 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-04 10:30:08.701 +01:00 [INF] Hosting environment: Development
+2021-03-04 10:30:08.701 +01:00 [INF] Content root path: C:\Users\Timilehin Ayeni\source\repos\CheckoutApp
+2021-03-04 10:30:08.701 +01:00 [DBG] Hosting started
+2021-03-04 10:30:08.759 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:4741/docs/index.html  
+2021-03-04 10:30:08.768 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2021-03-04 10:30:08.899 +01:00 [INF] Request finished in 147.5553ms 200 text/html;charset=utf-8
+2021-03-04 10:30:09.137 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:4741/swagger/v1/swagger.json  
+2021-03-04 10:30:09.384 +01:00 [INF] Request finished in 247.6863ms 200 application/json;charset=utf-8
+2021-03-04 10:30:21.220 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:4741/api/Checkout application/json 144
+2021-03-04 10:30:21.251 +01:00 [DBG] POST requests are not supported
+2021-03-04 10:30:21.343 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Checkout'
+2021-03-04 10:30:21.370 +01:00 [DBG] Endpoint 'CheckoutApp.Controllers.CheckoutController.ProcessPayment (CheckoutApp)' with route pattern 'api/Checkout' is valid for the request path '/api/Checkout'
+2021-03-04 10:30:21.372 +01:00 [DBG] Request matched endpoint 'CheckoutApp.Controllers.CheckoutController.ProcessPayment (CheckoutApp)'
+2021-03-04 10:30:21.381 +01:00 [INF] Executing endpoint 'CheckoutApp.Controllers.CheckoutController.ProcessPayment (CheckoutApp)'
+2021-03-04 10:30:21.420 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+2021-03-04 10:30:21.620 +01:00 [INF] Route matched with {action = "ProcessPayment", controller = "Checkout"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPayment(CheckoutApp.ViewModel.CardPaymentViewModel) on controller CheckoutApp.Controllers.CheckoutController (CheckoutApp).
+2021-03-04 10:30:21.642 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2021-03-04 10:30:21.642 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2021-03-04 10:30:21.644 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","CheckoutApp.Filters.ValidateModelAttribute (Order: 0)"]
+2021-03-04 10:30:21.645 +01:00 [DBG] Execution plan of exception filters (in the following order): ["CheckoutApp.Filters.GlobalExceptionFilter"]
+2021-03-04 10:30:21.646 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","CheckoutApp.Filters.ValidateModelAttribute (Order: 0)"]
+2021-03-04 10:30:21.649 +01:00 [DBG] Executing controller factory for controller CheckoutApp.Controllers.CheckoutController (CheckoutApp)
+2021-03-04 10:30:22.075 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2021-03-04 10:30:22.206 +01:00 [DBG] Executed controller factory for controller CheckoutApp.Controllers.CheckoutController (CheckoutApp)
+2021-03-04 10:30:22.233 +01:00 [DBG] Attempting to bind parameter 'model' of type 'CheckoutApp.ViewModel.CardPaymentViewModel' ...
+2021-03-04 10:30:22.244 +01:00 [DBG] Attempting to bind parameter 'model' of type 'CheckoutApp.ViewModel.CardPaymentViewModel' using the name '' in request data ...
+2021-03-04 10:30:22.247 +01:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2021-03-04 10:30:22.249 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2021-03-04 10:30:22.725 +01:00 [DBG] Done attempting to bind parameter 'model' of type 'CheckoutApp.ViewModel.CardPaymentViewModel'.
+2021-03-04 10:30:22.726 +01:00 [DBG] Done attempting to bind parameter 'model' of type 'CheckoutApp.ViewModel.CardPaymentViewModel'.
+2021-03-04 10:30:22.727 +01:00 [DBG] Attempting to validate the bound parameter 'model' of type 'CheckoutApp.ViewModel.CardPaymentViewModel' ...
+2021-03-04 10:30:22.790 +01:00 [DBG] Done attempting to validate the bound parameter 'model' of type 'CheckoutApp.ViewModel.CardPaymentViewModel'.
+2021-03-04 10:30:23.228 +01:00 [INF] Executing action method CheckoutApp.Controllers.CheckoutController.ProcessPayment (CheckoutApp) - Validation state: "Valid"
+2021-03-04 10:30:23.681 +01:00 [INF] Executed action method CheckoutApp.Controllers.CheckoutController.ProcessPayment (CheckoutApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 439.8567ms.
+2021-03-04 10:30:23.689 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2021-03-04 10:30:23.694 +01:00 [DBG] No information found on request to perform content negotiation.
+2021-03-04 10:30:23.694 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2021-03-04 10:30:23.694 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2021-03-04 10:30:23.696 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2021-03-04 10:30:23.696 +01:00 [INF] Executing ObjectResult, writing value of type 'System.Operation`1[[CheckoutApp.ViewModel.CardPaymentViewModel, CheckoutApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-03-04 10:30:23.795 +01:00 [INF] Executed action CheckoutApp.Controllers.CheckoutController.ProcessPayment (CheckoutApp) in 2139.1567ms
+2021-03-04 10:30:23.796 +01:00 [INF] Executed endpoint 'CheckoutApp.Controllers.CheckoutController.ProcessPayment (CheckoutApp)'
+2021-03-04 10:30:23.799 +01:00 [INF] Request finished in 2585.7339ms 200 application/json; charset=utf-8
+2021-03-04 10:38:29.513 +01:00 [DBG] Hosting starting
+2021-03-04 10:38:29.970 +01:00 [DBG] Loaded hosting startup assembly CheckoutApp
+2021-03-04 10:38:29.993 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-04 10:38:29.993 +01:00 [INF] Hosting environment: Development
+2021-03-04 10:38:29.993 +01:00 [INF] Content root path: C:\Users\Timilehin Ayeni\source\repos\CheckoutApp
+2021-03-04 10:38:29.993 +01:00 [DBG] Hosting started
+2021-03-04 10:38:30.042 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:4741/docs/index.html  
+2021-03-04 10:38:30.052 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2021-03-04 10:38:30.222 +01:00 [INF] Request finished in 183.062ms 200 text/html;charset=utf-8
+2021-03-04 10:38:30.451 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:4741/swagger/v1/swagger.json  
+2021-03-04 10:38:30.601 +01:00 [INF] Request finished in 149.6308ms 200 application/json;charset=utf-8
+2021-03-04 10:38:32.563 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:4741/api/Checkout application/json 127
+2021-03-04 10:38:32.598 +01:00 [DBG] POST requests are not supported
+2021-03-04 10:38:32.720 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Checkout'
+2021-03-04 10:38:32.758 +01:00 [DBG] Endpoint 'CheckoutApp.Controllers.CheckoutController.ProcessPayment (CheckoutApp)' with route pattern 'api/Checkout' is valid for the request path '/api/Checkout'
+2021-03-04 10:38:32.762 +01:00 [DBG] Request matched endpoint 'CheckoutApp.Controllers.CheckoutController.ProcessPayment (CheckoutApp)'
+2021-03-04 10:38:32.774 +01:00 [INF] Executing endpoint 'CheckoutApp.Controllers.CheckoutController.ProcessPayment (CheckoutApp)'
+2021-03-04 10:38:32.793 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+2021-03-04 10:38:32.890 +01:00 [INF] Route matched with {action = "ProcessPayment", controller = "Checkout"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPayment(CheckoutApp.ViewModel.CardPaymentViewModel) on controller CheckoutApp.Controllers.CheckoutController (CheckoutApp).
+2021-03-04 10:38:32.903 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2021-03-04 10:38:32.903 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2021-03-04 10:38:32.904 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","CheckoutApp.Filters.ValidateModelAttribute (Order: 0)"]
+2021-03-04 10:38:32.905 +01:00 [DBG] Execution plan of exception filters (in the following order): ["CheckoutApp.Filters.GlobalExceptionFilter"]
+2021-03-04 10:38:32.905 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","CheckoutApp.Filters.ValidateModelAttribute (Order: 0)"]
+2021-03-04 10:38:32.907 +01:00 [DBG] Executing controller factory for controller CheckoutApp.Controllers.CheckoutController (CheckoutApp)
+2021-03-04 10:38:33.338 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2021-03-04 10:38:33.473 +01:00 [DBG] Executed controller factory for controller CheckoutApp.Controllers.CheckoutController (CheckoutApp)
+2021-03-04 10:38:33.498 +01:00 [DBG] Attempting to bind parameter 'model' of type 'CheckoutApp.ViewModel.CardPaymentViewModel' ...
+2021-03-04 10:38:33.508 +01:00 [DBG] Attempting to bind parameter 'model' of type 'CheckoutApp.ViewModel.CardPaymentViewModel' using the name '' in request data ...
+2021-03-04 10:38:33.511 +01:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2021-03-04 10:38:33.514 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2021-03-04 10:38:34.163 +01:00 [DBG] Done attempting to bind parameter 'model' of type 'CheckoutApp.ViewModel.CardPaymentViewModel'.
+2021-03-04 10:38:34.163 +01:00 [DBG] Done attempting to bind parameter 'model' of type 'CheckoutApp.ViewModel.CardPaymentViewModel'.
+2021-03-04 10:38:34.164 +01:00 [DBG] Attempting to validate the bound parameter 'model' of type 'CheckoutApp.ViewModel.CardPaymentViewModel' ...
+2021-03-04 10:38:34.199 +01:00 [DBG] Done attempting to validate the bound parameter 'model' of type 'CheckoutApp.ViewModel.CardPaymentViewModel'.
+2021-03-04 10:38:34.203 +01:00 [DBG] The request has model state errors, returning an error response.
+2021-03-04 10:38:34.206 +01:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2021-03-04 10:38:34.214 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2021-03-04 10:38:34.218 +01:00 [DBG] No information found on request to perform content negotiation.
+2021-03-04 10:38:34.218 +01:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml"]'.
+2021-03-04 10:38:34.220 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2021-03-04 10:38:34.220 +01:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2021-03-04 10:38:34.454 +01:00 [INF] Executed action CheckoutApp.Controllers.CheckoutController.ProcessPayment (CheckoutApp) in 1529.3114ms
+2021-03-04 10:38:34.456 +01:00 [INF] Executed endpoint 'CheckoutApp.Controllers.CheckoutController.ProcessPayment (CheckoutApp)'
+2021-03-04 10:38:34.464 +01:00 [INF] Request finished in 1907.6887ms 400 application/problem+json; charset=utf-8
+2021-03-04 10:38:48.194 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:4741/api/Checkout application/json 128
+2021-03-04 10:38:48.197 +01:00 [DBG] POST requests are not supported
+2021-03-04 10:38:48.198 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Checkout'
+2021-03-04 10:38:48.200 +01:00 [DBG] Endpoint 'CheckoutApp.Controllers.CheckoutController.ProcessPayment (CheckoutApp)' with route pattern 'api/Checkout' is valid for the request path '/api/Checkout'
+2021-03-04 10:38:48.201 +01:00 [DBG] Request matched endpoint 'CheckoutApp.Controllers.CheckoutController.ProcessPayment (CheckoutApp)'
+2021-03-04 10:38:48.202 +01:00 [INF] Executing endpoint 'CheckoutApp.Controllers.CheckoutController.ProcessPayment (CheckoutApp)'
+2021-03-04 10:38:48.204 +01:00 [INF] Route matched with {action = "ProcessPayment", controller = "Checkout"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPayment(CheckoutApp.ViewModel.CardPaymentViewModel) on controller CheckoutApp.Controllers.CheckoutController (CheckoutApp).
+2021-03-04 10:38:48.205 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2021-03-04 10:38:48.205 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2021-03-04 10:38:48.205 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","CheckoutApp.Filters.ValidateModelAttribute (Order: 0)"]
+2021-03-04 10:38:48.206 +01:00 [DBG] Execution plan of exception filters (in the following order): ["CheckoutApp.Filters.GlobalExceptionFilter"]
+2021-03-04 10:38:48.206 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","CheckoutApp.Filters.ValidateModelAttribute (Order: 0)"]
+2021-03-04 10:38:48.206 +01:00 [DBG] Executing controller factory for controller CheckoutApp.Controllers.CheckoutController (CheckoutApp)
+2021-03-04 10:38:48.208 +01:00 [DBG] Executed controller factory for controller CheckoutApp.Controllers.CheckoutController (CheckoutApp)
+2021-03-04 10:38:48.209 +01:00 [DBG] Attempting to bind parameter 'model' of type 'CheckoutApp.ViewModel.CardPaymentViewModel' ...
+2021-03-04 10:38:48.210 +01:00 [DBG] Attempting to bind parameter 'model' of type 'CheckoutApp.ViewModel.CardPaymentViewModel' using the name '' in request data ...
+2021-03-04 10:38:48.210 +01:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2021-03-04 10:38:48.210 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2021-03-04 10:38:48.213 +01:00 [DBG] Done attempting to bind parameter 'model' of type 'CheckoutApp.ViewModel.CardPaymentViewModel'.
+2021-03-04 10:38:48.213 +01:00 [DBG] Done attempting to bind parameter 'model' of type 'CheckoutApp.ViewModel.CardPaymentViewModel'.
+2021-03-04 10:38:48.213 +01:00 [DBG] Attempting to validate the bound parameter 'model' of type 'CheckoutApp.ViewModel.CardPaymentViewModel' ...
+2021-03-04 10:38:48.215 +01:00 [DBG] Done attempting to validate the bound parameter 'model' of type 'CheckoutApp.ViewModel.CardPaymentViewModel'.
+2021-03-04 10:38:48.522 +01:00 [INF] Executing action method CheckoutApp.Controllers.CheckoutController.ProcessPayment (CheckoutApp) - Validation state: "Valid"
+2021-03-04 10:38:49.024 +01:00 [INF] Executed action method CheckoutApp.Controllers.CheckoutController.ProcessPayment (CheckoutApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 481.2444ms.
+2021-03-04 10:38:49.027 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2021-03-04 10:38:49.027 +01:00 [DBG] No information found on request to perform content negotiation.
+2021-03-04 10:38:49.028 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2021-03-04 10:38:49.029 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2021-03-04 10:38:49.029 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2021-03-04 10:38:49.030 +01:00 [INF] Executing ObjectResult, writing value of type 'System.Operation`1[[CheckoutApp.ViewModel.CardPaymentViewModel, CheckoutApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-03-04 10:38:49.046 +01:00 [INF] Executed action CheckoutApp.Controllers.CheckoutController.ProcessPayment (CheckoutApp) in 839.6155ms
+2021-03-04 10:38:49.047 +01:00 [INF] Executed endpoint 'CheckoutApp.Controllers.CheckoutController.ProcessPayment (CheckoutApp)'
+2021-03-04 10:38:49.048 +01:00 [INF] Request finished in 855.1131ms 200 application/json; charset=utf-8
